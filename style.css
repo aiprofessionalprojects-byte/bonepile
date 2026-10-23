@@ -28,3 +28,8 @@ ul.checks li::before{content:"✓";position:absolute;left:0;top:1px;width:22px;h
 nav{margin-top:40px;text-shadow:0 1px 8px #000;padding-top:20px;border-top:1px solid var(--line);font-size:15px;color:var(--dim)}
 nav a{margin-right:18px}
 @media (min-width:700px){.shots{overflow:visible;margin:6px 0 10px;padding:6px 0 14px}.shots img{width:calc((100% - 48px)/5)}}
+@media (min-width:700px){
+body{position:relative;min-height:100vh}
+body::before{position:absolute;inset:0;background:#0B0820 url(banner.jpg) right top/auto 100% no-repeat}
+body::after{position:absolute;inset:0;background:linear-gradient(90deg,#0B0820f0 0%,#0B0820c0 38%,#0B082055 70%,#0B082030 100%),linear-gradient(180deg,#0B082000 0%,#0B082000 70%,#0B0820a0 100%)}
+}
